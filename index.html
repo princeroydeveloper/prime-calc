@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Calc</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="icon.svg">
+</head>
+<body class="gradient">
+  <div class="container my-5">
+    <h1 class="text-light text-center letter-space mb-2">Prime Calc</h1>
+    <center>
+      <div class="card p-4" style="background: none; border: 2px solid transparent; width: 725px; max-width: 725px;">
+        <div class="card-body" style="background: none;">
+          <h4>Enter a number here to prime factorize or check a prime number</h4><br>
+          <input type="number" class="form-control form-control-lg custom-font custom-settings" placeholder="Try 123456 or 11111 or 999999" id="inputField">
+          <button class="btn btn-primary mt-4 custom-font btn-lg" onclick="computePrimeFactors()" id="computeBtn">Analyze Number</button><br>
+          <div id="answerDiv" style="display: none;">
+            <h4 class="mt-5 mb-2">Answer</h4>
+            <span style="text-align: start;" id="answerArea" class="form-control form-control-lg custom-settings custom-font p-4" disabled></span>
+          </div>
+        </div>
+        <div class="my-5">
+          <a href="https://github.com/princeroydeveloper/prime-calc" target="_blank" style="text-decoration: none; color: #000000;">
+            <i class="fab fa-github github-icon"></i>
+            <h5>Download Source Code from Github</h5>
+          </a>
+        </div>
+      </div>
+    </center>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
